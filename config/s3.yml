@@ -1,11 +1,10 @@
 default: &default
-  bucket: spree_essentials-q230459qw09utaosdig
   access_key_id: AKIAJD5HN5A4SMTPR53A
   secret_access_key: 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
 
-
 development:
   <<: *default
+  bucket: spree_essentials_dev_201104008
 
 test:
   <<: *default
@@ -13,3 +12,4 @@ test:
 
 production:
   <<: *default
+  bucket: spree_essentials_201104008

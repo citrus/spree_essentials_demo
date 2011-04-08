@@ -1,0 +1,27 @@
+/* ========================================== 
+    Main Menu
+*/
+
+ul#main-menu {  
+  height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul#main-menu li {
+  list-style: none;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  font-size: 14px;
+}
+ul#main-menu li a {
+  display: block;
+  height: 20px;
+}
+ul#main-menu li.active a {
+  color: #505050;
+}
+ul#main-menu li a:hover {
+  color: #000;
+}
