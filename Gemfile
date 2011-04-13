@@ -8,12 +8,4 @@ gem 'thin', '1.2.8'
 gem 'spree', '0.50.0'
 gem 'spree_heroku', :git => 'git://github.com/paxer/spree-heroku.git'
 
-
 gem 'spree_essentials', :git => 'git://github.com/citrus/spree_essentials.git'
-
-#, :path => "~/RoR/gems"
-
-
-
-#:path => "~/RoR/gems"
-#:git => 'git://github.com/citrus/spree_essentials.git'

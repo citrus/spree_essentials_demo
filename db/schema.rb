@@ -87,6 +87,7 @@ ActiveRecord::Schema.define(:version => 20110317074620) do
     t.text     "body"
     t.string   "link"
     t.string   "link_text"
+    t.string   "context"
     t.integer  "position",                :default => 999
     t.string   "attachment_file_name"
     t.string   "attachment_content_type"

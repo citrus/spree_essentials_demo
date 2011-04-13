@@ -4,12 +4,12 @@ default: &default
 
 development:
   <<: *default
-  bucket: spree_essentials_dev_201104008
+  bucket: spree-essentials-20110413
 
 test:
   <<: *default
-  bucket: spree_essentials_test-q230459qw09utaosdig
+  bucket: spree-essentials-test-q230459qw09utaosdig
 
 production:
   <<: *default
-  bucket: spree_essentials_201104008
+  bucket: spree-essentials-20110413
