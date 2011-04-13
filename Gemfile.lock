@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/citrus/spree_essentials.git
-  revision: 11a903a06a11f3d37193686978cc6959e0215639
+  revision: 7d80e2ad7b682b3f1f5b8e097c658a46b37b1138
   specs:
     spree_essentials (0.1.0)
       acts-as-taggable-on (>= 2.0.6)
