@@ -1,0 +1,58 @@
+button img,  a.button img, input[type=submit].button img { vertical-align: middle; margin: 0 7px 8px 0;  }
+button, a.button, input[type=submit].button, ul#nav-bar input[type=submit], #sidebar_products_search input[type=submit]  {
+  background: #ededed url(/images/buttons/bkg-btn-grey.gif) repeat-x 0 0;
+  overflow: hidden;
+  text-decoration: none;
+  border: 1px solid #b7b7b7;
+  width: auto;
+  padding: 8px 22px;
+  line-height: 1em;
+  color: #000000;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-box-shadow: 0 1px 2px #cccccc;
+  -webkit-box-shadow: 0 1px 2px #cccccc;
+  text-shadow: 0 1px 2px #ffffff;
+}
+
+button:hover, a.button:hover, input[type=submit].button:hover, ul#nav-bar input[type=submit]:hover, #sidebar_products_search input[type=submit]:hover   {
+  background: #dfdfdf url(/images/buttons/bkg-btn-grey.gif) repeat-x 0 -35px;
+  overflow: hidden;
+  text-decoration: none;
+  border: 1px solid #afafaf;
+  color: #000000;
+  cursor: pointer;
+}
+
+button:active, a.button:active, input[type=submit].button:active, ul#nav-bar input[type=submit]:active, #sidebar_products_search input[type=submit]:active {
+  background: #d4d3d3 url(/images/buttons/bkg-btn-grey.gif) repeat-x 0 -70px;
+  outline: none;
+}
+
+input[type="text"], input[type="password"], textarea {
+  border: 1px solid #cccccc;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  line-height: 1.5em;
+  padding: 4px;
+  outline: none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+  border-color: #a2a1a1;
+  color: #000000;
+  -moz-box-shadow: 0 0 6px #83c8f0;
+  -webkit-box-shadow: 0 0 6px #83c8f0;
+}
+
+button.large.primary {
+  background: #ededed url(/images/buttons/button_overlay.png) repeat-x 0 0;
+  text-decoration: none;
+  border-color: #afafaf;
+  color: #000;
+  cursor: pointer;
+}
+
+button.large.primary:hover {
+  background: #d4d3d3;
+}
