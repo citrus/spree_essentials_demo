@@ -7,13 +7,15 @@ This is the source code running the [Spree Essentials demo](http://spree-essenti
 Credits
 -------
 
-Milo Delgado - 100% css styling
-Spencer Steffen - development
-Heroku - hosting
-RailsDog - Spree
+* Milo Delgado - 100% css styling
+* Spencer Steffen - development
+* Heroku - hosting
+* RailsDog - Spree
 
 
-### Thanks everyone, enjoy!
+Thanks everyone, enjoy!
+-----------------------
+
 
 
 License
