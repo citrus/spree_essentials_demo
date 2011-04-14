@@ -12,7 +12,7 @@ ul#main-menu  {
 	overflow: hidden;
 }
 
-ul#main-menu  li {
+ul#main-menu li {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
@@ -21,10 +21,6 @@ ul#main-menu  li {
 	background-color: #fff;
 	border: solid 1px #eee;
 	position: relative;
-}
-
-ul#main-menu li.selected {
-	z-index: 3;
 }
 
 ul#main-menu li a:link, ul#main-menu  li a:visited {
@@ -67,13 +63,20 @@ ul#main-menu li a:link, ul#main-menu  li a:visited {
   -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FFFFFFFF,EndColorStr=#FFEEEEEE)";
 }
 
+
+ul#main-menu li.active {
+  border-top: 1px solid #e00053;
+}
+ul#main-menu li.active a {
+	background: #fff;
+}
+
 ul#main-menu li a:hover {
 	background: #e00053;
 	color: #f9f9f9;
   -webkit-box-shadow: #F9E8EF 0px 1px 1px inset, 0 -1px 3px rgba(0,0,0,0.5);
 	-moz-box-shadow: #F9E8EF 0px 1px 1px inset, 0 -1px 3px rgba(0,0,0,0.5);
 	box-shadow: #F9E8EF 0px 1px 1px inset, 0 -1px 3px rgba(0,0,0,0.5);
-  margin-top: -1px;
 }
 ul#main-menu a:link:hover {
   border-bottom: none;
@@ -86,4 +89,25 @@ ul#main-menu li.selected a:link, ul#main-menu  li.selected a:visited {
 	background: -moz-linear-gradient(top center, #2c2c2c, #f2f2f2 80%) repeat scroll 0 0 #2c2c2c;
 	background: -webkit-gradient(linear,left bottom,left top,color-stop(.2, #2c2c2c),color-stop(.8, #d1d1d1));
 	background-color: #f2f2f2;
+}
+
+/* ========================================== 
+    Slideshow
+*/
+
+.slideshow {
+  position: relative;
+  margin-bottom: 1em;
+}
+.slideshow.slide {
+  width: 950px;
+  height: 250px;
+}
+.slideshow img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.slideshow img:first-child {
+  z-index: 1;
 }

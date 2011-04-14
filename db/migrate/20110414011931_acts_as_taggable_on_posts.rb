@@ -1,5 +1,7 @@
-class ActsAsTaggableOnMigration < ActiveRecord::Migration
+class ActsAsTaggableOnPosts < ActiveRecord::Migration
   def self.up
+    return if table_exists? :tags
+    
     create_table :tags do |t|
       t.string :name
     end
@@ -22,7 +24,9 @@ class ActsAsTaggableOnMigration < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :taggings
+    return unless table_exists? :tags
     drop_table :tags
+    drop_table :taggings
   end
+  
 end

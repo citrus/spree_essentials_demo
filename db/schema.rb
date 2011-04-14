@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110317074620) do
+ActiveRecord::Schema.define(:version => 20110414011949) do
 
   create_table "addresses", :force => true do |t|
     t.string   "firstname"
@@ -47,18 +47,37 @@ ActiveRecord::Schema.define(:version => 20110317074620) do
 
   add_index "adjustments", ["order_id"], :name => "index_adjustments_on_order_id"
 
+  create_table "article_products", :force => true do |t|
+    t.integer "article_id"
+    t.integer "product_id"
+    t.integer "position"
+  end
+
+  create_table "articles", :force => true do |t|
+    t.string   "title"
+    t.string   "path"
+    t.string   "teaser"
+    t.datetime "posted_at"
+    t.text     "body"
+    t.string   "author"
+    t.boolean  "live",       :default => true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "assets", :force => true do |t|
     t.integer  "viewable_id"
     t.string   "viewable_type",           :limit => 50
     t.string   "attachment_content_type"
     t.string   "attachment_file_name"
-    t.integer  "attachment_file_size"
+    t.integer  "attachment_size"
     t.integer  "position"
     t.string   "type",                    :limit => 75
     t.datetime "attachment_updated_at"
     t.integer  "attachment_width"
     t.integer  "attachment_height"
     t.text     "alt"
+    t.integer  "attachment_file_size"
   end
 
   add_index "assets", ["viewable_id"], :name => "index_assets_on_viewable_id"
@@ -88,6 +107,7 @@ ActiveRecord::Schema.define(:version => 20110317074620) do
     t.string   "link"
     t.string   "link_text"
     t.string   "context"
+    t.boolean  "hide_title",              :default => false
     t.integer  "position",                :default => 999
     t.string   "attachment_file_name"
     t.string   "attachment_content_type"
