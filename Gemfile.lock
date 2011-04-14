@@ -13,14 +13,8 @@ GIT
       spree_essentials (>= 0.1.0)
 
 GIT
-  remote: git://github.com/paxer/spree-heroku.git
-  revision: 6fe1afec57545d4fc5e2053ce39cc2afe84fcf77
-  specs:
-    spree_heroku (1.0.0)
-      spree_core (>= 0.40.0)
-
-PATH
-  remote: ~/RoR/gems/ESSENTIALS
+  remote: git://github.com/citrus/spree_essentials.git
+  revision: 10a8ba959f00fb829b098996b19faafa6f2251e7
   specs:
     spree_essentials (0.1.0)
       acts-as-taggable-on (>= 2.0.6)
@@ -28,6 +22,13 @@ PATH
       rdiscount (>= 1.6.8)
       spree_auth (>= 0.30.1)
       spree_core (>= 0.30.1)
+
+GIT
+  remote: git://github.com/paxer/spree-heroku.git
+  revision: 6fe1afec57545d4fc5e2053ce39cc2afe84fcf77
+  specs:
+    spree_heroku (1.0.0)
+      spree_core (>= 0.40.0)
 
 GEM
   remote: http://rubygems.org/
