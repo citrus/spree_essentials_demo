@@ -1,0 +1,15 @@
+default: &default
+  access_key_id: XXXXX
+  secret_access_key: XXXXX
+
+development:
+  <<: *default
+  bucket: XXXXX-dev
+
+test:
+  <<: *default
+  bucket: XXXXX-test
+
+production:
+  <<: *default
+  bucket: XXXXX
